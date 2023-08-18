@@ -1,18 +1,101 @@
-.App {
-  text-align: center;
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: snow;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+  margin-top: 20px;
+}
+
+.App {
+  text-align: center;
+  background-color: snow;
+}
+
+#box {
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid black;
+  border-radius: 10px;
+  margin-top: 30px;
+  width: 600px;
+  padding: 10px;
+}
+
+.App-nav a {
+  padding: 5px 20px 5px 20px;
+  background-color: #ff9ea5;
+  text-decoration: none;
+  color: black;
+  line-height: 1;
+  vertical-align: middle;
+  border: 2px solid black;
+  font-size: 0.85em;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.App-nav a:hover {
+  color: rgb(139, 186, 194);
+  background-color: #feefe1;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+#header {
+  margin-bottom: 5px;
+}
+
+table {
+  padding: 2.5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr th {
+  color: black;
+  background-color: #ffebef;
+  border: 2px solid #ff9ea5;
+  padding: 4px;
+  text-align: center;
+}
+
+tr td {
+  color: black;
+  background-color: #ffebef;
+  border: 2px solid #ff9ea5;
+  padding: 4px;
+  text-align: center;
+}
+
+footer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+input {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 2px;
+}
+
+select {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 2px;
+}
+
+button {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 2px;
+}
+
+#left-align {
+  text-align: left;
+  margin: auto;
+  width: 50%;
 }

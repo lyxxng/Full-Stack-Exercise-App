@@ -9,8 +9,8 @@ function ExerciseRow({ exercise, deleteExercise, editExercise }) {
             <td>{ exercise.weight }</td>
             <td>{ exercise.unit }</td>
             <td>{ exercise.date }</td>
-            <td><MdEdit onCLick={ () => editExercise(exercise) }/></td>
-            <td><MdDelete onCLick={ () => deleteExercise(exercise._id) }/></td>
+            <td><MdEdit onClick={ () => editExercise(exercise) }/></td>
+            <td><MdDelete onClick={ () => deleteExercise(exercise._id) }/></td>
         </tr>
     );
 }

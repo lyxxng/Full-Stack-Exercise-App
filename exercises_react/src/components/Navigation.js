@@ -5,7 +5,8 @@ function Navigation() {
     return (
         <nav className="App-nav">
             <Link to="/">Home</Link>
-            <Link to="/create">Create Exercise</Link>
+            <span>&emsp;</span>
+            <Link to="/add-exercise">Add Exercise</Link>
         </nav>
     );
 }
