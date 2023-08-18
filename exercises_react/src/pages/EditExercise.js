@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 export const EditExercisePage = ({ exerciseToEdit }) => {
     const navigate = useNavigate();
 
+    // Add state variables for all properties
     const [name, setName] = useState(exerciseToEdit.name);
     const [reps, setReps] = useState(exerciseToEdit.reps);
     const [weight, setWeight] = useState(exerciseToEdit.weight);
@@ -13,6 +14,7 @@ export const EditExercisePage = ({ exerciseToEdit }) => {
     const editExercise = async () => {
         const editedExercise = {name, reps, weight, unit, date};
         
+        // Update document in database through PUT request
         const response = await fetch(`/exercises/${ exerciseToEdit._id }`, {
             method: 'PUT',
             body: JSON.stringify(editedExercise),
@@ -22,10 +24,13 @@ export const EditExercisePage = ({ exerciseToEdit }) => {
         });
 
         if (response.status === 200) {
+            // Alert user that update was successful if response has status code 200
             alert("Successfully edited the exercise!");
         } else {
+            // Alert user that update was unsuccessully otherwise
             alert("Failed to edit the exercise.");
         }
+        // Send user back to homepage
         navigate('/');
     };
 
@@ -68,7 +73,6 @@ export const EditExercisePage = ({ exerciseToEdit }) => {
                     value={ date }
                     onChange={ e => setDate(e.target.value) } />
             </div>
-            <br />
             <button
                 onClick={editExercise}>Save</button>
         </div>

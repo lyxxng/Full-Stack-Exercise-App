@@ -8,12 +8,13 @@ import EditExercisePage from './pages/EditExercise';
 import { useState } from 'react';
 
 function App() {
+  // Declare state variable for exercise that will be updated by the user
   const [exerciseToEdit, setExerciseToEdit] = useState();
 
   return (
     <><div className="App">
-      <div id="box">
-        <body>
+      <body>
+        <div id="box">
           <header>
             <h1>Exercise Tracker</h1>
             <p>Use this website to keep track of exercises, including the number of
@@ -28,8 +29,8 @@ function App() {
               </Routes>
           </Router>
           <footer>© 2023 Lisa Young</footer>
-        </body>
-      </div>
+        </div>
+      </body>
     </div></>
   );
 }

@@ -1,7 +1,8 @@
+// Validate schema content
 export const SCHEMA = {
     name: {
         notEmpty: true,
-        isAlpha: true
+        isAscii: true
     },
     reps: {
         isInt: {

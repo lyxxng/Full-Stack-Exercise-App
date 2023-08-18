@@ -2,6 +2,7 @@ import React from 'react';
 import ExerciseRow from './ExerciseRow';
 
 function ExerciseTable({ exercises, deleteExercise, editExercise }) {
+    // Render table with all exercises retrieved from GET request with an ExerciseRow component for each exercise
     return (
         <table>
             <thead>
