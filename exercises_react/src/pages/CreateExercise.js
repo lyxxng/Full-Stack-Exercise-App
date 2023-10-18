@@ -8,7 +8,7 @@ export const CreateExercisePage = () => {
     const [name, setName] = useState('');
     const [reps, setReps] = useState('');
     const [weight, setWeight] = useState('');
-    const [unit, setUnit] = useState('');
+    const [unit, setUnit] = useState('kgs');
     const [date, setDate] = useState('');
 
     const addExercise = async () => {
